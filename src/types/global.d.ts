@@ -1,10 +1,4 @@
-import type {
-  VNode,
-  VNodeChild,
-  ComponentPublicInstance,
-  FunctionalComponent,
-  PropType as VuePropType,
-} from 'vue'
+import type { VNodeChild, PropType as VuePropType } from 'vue'
 
 // vue
 declare type PropType<T> = VuePropType<T>
@@ -37,29 +31,6 @@ declare interface WheelEvent {
   path?: EventTarget[]
 }
 
-interface ImportMetaEnv extends ViteEnv {
-  __: unknown
-}
-
-declare interface ViteEnv {
-  VITE_PORT: number
-  VITE_USE_MOCK: boolean
-  VITE_PUBLIC_PATH: string
-  VITE_GLOB_APP_TITLE: string
-  VITE_GLOB_APP_SHORT_NAME: string
-  VITE_DROP_CONSOLE: boolean
-  VITE_GLOB_PROD_MOCK: boolean
-  VITE_GLOB_IMG_URL: string
-  VITE_PROXY: [string, string][]
-  VITE_BUILD_COMPRESS: 'gzip' | 'brotli' | 'none'
-  VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE: boolean
-}
-
 declare function parseInt(s: string | number, radix?: number): number
 
 declare function parseFloat(string: string | number): number
-declare module 'vue' {
-  export type JSXComponent<Props = any> =
-    | { new (): ComponentPublicInstance<Props> }
-    | FunctionalComponent<Props>
-}
