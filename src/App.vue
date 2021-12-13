@@ -1,8 +1,14 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from 'comps/HelloWorld.vue'
-console.log(import.meta.env.VITE_APP_WEB_URL)
+
+// import { onMounted } from "@vue/runtime-core"
+
+// console.log(import.meta.env.VITE_APP_WEB_URL)
+import { User } from 'api/user'
+onMounted(async () => {
+  await User.get()
+})
 </script>
 
 <template>
@@ -20,4 +26,3 @@ console.log(import.meta.env.VITE_APP_WEB_URL)
   margin-top: 60px;
 }
 </style>
-
