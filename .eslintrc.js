@@ -20,7 +20,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': 'off',
     'vue/no-multiple-template-root': 'off',
     'symbol-description': 'off',
     'no-async-promise-executor': 'off',
