@@ -29,7 +29,23 @@ export default defineConfig({
     modules: {},
     // PostCSS 配置（格式同 postcss.config.js）
     // postcss-load-config 的插件配置
-    postcss: {},
+    postcss: {
+      plugins: [
+        // 前缀追加
+        require('autoprefixer')({
+          overrideBrowserslist: [
+            'Android 4.1',
+            'iOS 7.1',
+            'Chrome > 31',
+            'ff > 31',
+            'ie >= 8',
+            '> 1%',
+          ],
+          grid: true,
+        }),
+        require('postcss-flexbugs-fixes'),
+      ],
+    },
     //指定传递给 CSS 预处理器的选项
     preprocessorOptions: {
       scss: {
@@ -39,17 +55,15 @@ export default defineConfig({
   },
   server: {
     //服务器主机名
-    host: '',
+    host: '0.0.0.0',
     //端口号
-    port: '',
+    port: '9600',
     //设为 true 时若端口已被占用则会直接退出，
     //而不是尝试下一个可用端口
     strictPort: true,
     //https.createServer()配置项
     https: '',
-    //服务器启动时自动在浏览器中打开应用程序。
-    //当此值为字符串时，会被用作 URL 的路径名
-    open: '/docs/index.html',
+    open: true,
     //自定义代理规则
     proxy: {
       '/api': {
