@@ -63,7 +63,7 @@ export default defineConfig({
     }
   },
   css: {
-    //配置 CSS modules 的行为。选项将被传递给 postcss-modules。
+    // 配置 CSS modules 的行为。选项将被传递给 postcss-modules。
     modules: {},
     // PostCSS 配置（格式同 postcss.config.js）
     // postcss-load-config 的插件配置
@@ -84,7 +84,7 @@ export default defineConfig({
         require('postcss-flexbugs-fixes')
       ]
     },
-    //指定传递给 CSS 预处理器的选项
+    // 指定传递给 CSS 预处理器的选项
     preprocessorOptions: {
       scss: {
         // eslint-disable-next-line quotes
@@ -93,17 +93,17 @@ export default defineConfig({
     }
   },
   server: {
-    //服务器主机名
+    // 服务器主机名
     host: '0.0.0.0',
-    //端口号
+    // 端口号
     port: '9600',
-    //设为 true 时若端口已被占用则会直接退出，
-    //而不是尝试下一个可用端口
+    // 设为 true 时若端口已被占用则会直接退出，
+    // 而不是尝试下一个可用端口
     strictPort: true,
-    //https.createServer()配置项
+    // https.createServer()配置项
     https: '',
     open: true,
-    //自定义代理规则
+    // 自定义代理规则
     proxy: {
       '/api': {
         target: 'http://jsonplaceholder.typicode.com',
@@ -117,14 +117,14 @@ export default defineConfig({
       //   rewrite: (path) => path.replace(/^\/api/, ''),
       // },
     },
-    //开发服务器配置 CORS
-    //boolean | CorsOptions
+    // 开发服务器配置 CORS
+    // boolean | CorsOptions
     cors: {},
-    //设置为 true 强制使依赖预构建
+    // 设置为 true 强制使依赖预构建
     force: true,
-    //禁用或配置 HMR 连接
+    // 禁用或配置 HMR 连接
     hmr: {},
-    //传递给 chokidar 的文件系统监视器选项
+    // 传递给 chokidar 的文件系统监视器选项
     watch: {}
   },
   build: {
