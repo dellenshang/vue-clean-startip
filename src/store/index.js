@@ -1,7 +1,9 @@
 import {createStore} from 'vuex';
 
-export const store = createStore({
+const store = createStore({
   state: {
     couter: 0
   }
 });
+
+export default store
