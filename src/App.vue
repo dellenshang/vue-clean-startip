@@ -5,10 +5,10 @@
 // import { onMounted } from "@vue/runtime-core"
 
 // console.log(import.meta.env.VITE_APP_WEB_URL)
-import { User } from 'api/user'
-onMounted(async () => {
-  await User.get()
-})
+// import { User } from 'api/user'
+// onMounted(async () => {
+//   await User.get()
+// })
 </script>
 
 <template>

@@ -1,8 +1,11 @@
 import { createApp } from 'vue'
 import router from '@/router'
-
+import i18n from '@/i18n'
 import { store, key } from '@/store'
-import SvgIcon from './components/svg-icon/index.vue'
+import SvgIcon from 'comps/svg-icon/index.vue'
 import App from './App.vue'
+// 等宽字体
+import 'vfonts/FiraCode.css'
+
 const app = createApp(App)
-app.use(router).use(store, key).component('svg-icon', SvgIcon).mount('#app')
+app.use(router).use(store, key).use(i18n).component('svg-icon', SvgIcon).mount('#app')

@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+
 import viteCompression from 'vite-plugin-compression'
 import { svgSprite } from './src/plugins/svg-sprite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-
+import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
@@ -13,6 +14,9 @@ export default defineConfig({
   base: './',
   plugins: [
     vue(),
+    vueI18n({
+      include: resolve(__dirname, './src/i18n/langs/**')
+    }),
     [svgSprite('./src/assets/icons/svg/')],
     AutoImport({
       include: [
@@ -26,6 +30,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
+        '@vueuse/core',
         // custom
         {
           // '@vueuse/core': [
@@ -46,7 +51,7 @@ export default defineConfig({
       ]
     }),
     viteCompression({
-      //生成压缩包gz
+      // 生成压缩包gz
       verbose: true,
       disable: false,
       threshold: 10240,
