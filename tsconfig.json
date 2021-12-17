@@ -16,10 +16,11 @@
     "paths": {
       "@/*": ["*"],
       "comps/*": ["components/*"],
+      "comps/async/*": ["components/async/*"],
       "api/*": ["api/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts"],
   "exclude": [
     "node_modules",
     "dist",

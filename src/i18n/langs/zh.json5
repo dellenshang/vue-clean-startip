@@ -1,5 +1,5 @@
 {
-  select: 'バナナが欲しい？',
+  select: '嗯？',
   fruits: {
     banana: 'asdasd',
   },

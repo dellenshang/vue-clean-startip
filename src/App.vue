@@ -9,11 +9,18 @@
 // onMounted(async () => {
 //   await User.get()
 // })
+// :theme="getDarkTheme"
+// :theme-overrides="getThemeOverrides"
+import { zhCN, dateZhCN } from 'naive-ui'
+// console.log(zhCN)
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <n-config-provider :locale="zhCN" :date-locale="dateZhCN">
+    <RouterView />
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  </n-config-provider>
 </template>
 
 <style>

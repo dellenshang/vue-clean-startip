@@ -22,9 +22,16 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'space-before-function-paren': 'off',
     'vue/no-multiple-template-root': 'off',
+    'vue/multi-word-component-names': ['error', {
+      ignores: ['Login']
+    }],
     'symbol-description': 'off',
     'no-async-promise-executor': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'off'
+  },
+  globals: {
+    useI18n: true
   }
 }

@@ -1,10 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import { defaultRoutes } from './unauth-routes'
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    // { path: '/', component: () => import('views/home.vue') }
-  ]
+  routes: defaultRoutes
 })
 
 export function resetRoute(): void {

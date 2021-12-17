@@ -15,6 +15,8 @@ export default defineConfig({
   plugins: [
     vue(),
     vueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
       include: resolve(__dirname, './src/i18n/langs/**')
     }),
     [svgSprite('./src/assets/icons/svg/')],
@@ -43,7 +45,7 @@ export default defineConfig({
       ]
     }),
     Components({
-      dirs: ['src/components'],
+      dirs: ['src/components/auto'],
       extensions: ['vue'],
       deep: true,
       resolvers: [
@@ -63,6 +65,7 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src'),
       comps: resolve(__dirname, 'src/components'),
+      async: resolve(__dirname, 'src/components/async'),
       api: resolve(__dirname, 'src/api'),
       '/images': 'src/assets/images'
     }
@@ -81,7 +84,7 @@ export default defineConfig({
             'iOS 7.1',
             'Chrome > 31',
             'ff > 31',
-            'ie >= 8',
+            'ie > 11',
             '> 1%'
           ],
           grid: true
