@@ -8,24 +8,24 @@
 import { defineComponent, computed } from 'vue'
 
 interface Props {
-  iconClass: string
+  name: string
   className: string
 }
 
 export default defineComponent({
   name: 'SvgIcon',
   props: {
-    iconClass: {
+    name: {
       type: String,
       required: true
     },
     className: {
       type: String,
-      default: () => ''
+      default: ''
     }
   },
   setup(props: Props) {
-    const iconName = computed((): string => `#icon-${props.iconClass}`)
+    const iconName = computed((): string => `#i-${props.name}`)
     const svgClass = computed((): string => {
       if (props.className) {
         return 'svg-icon ' + props.className
@@ -44,9 +44,8 @@ export default defineComponent({
 
 <style scoped>
 .svg-icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   overflow: hidden;
 }

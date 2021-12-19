@@ -45,7 +45,7 @@ function findSvgFile(dir) {
   return svgRes
 }
 
-export const svgSprite = (path, perfix = 'icon') => {
+export const svgSprite = (path, perfix = 'i') => {
   if (path === '') return
   idPerfix = perfix
   const res = findSvgFile(path)
