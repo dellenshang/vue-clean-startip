@@ -67,7 +67,7 @@ export default defineConfig({
       comps: resolve(__dirname, 'src/components'),
       async: resolve(__dirname, 'src/components/async'),
       api: resolve(__dirname, 'src/api'),
-      '/images': 'src/assets/images'
+      '/svg': 'src/assets/svg'
     }
   },
   css: {

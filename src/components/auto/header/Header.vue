@@ -1,6 +1,6 @@
 <template>
   <ul class="i-menu i-menu-light i-menu-horizontal header-wrap-pc">
-    <svg-icon class="head-logo cursor" name="logo-header"></svg-icon>
+    <svg-icon class="head-logo cursor" name="logo-header" @click="$router.push('/')"></svg-icon>
     <div class="i-menu-time">{{ time }}</div>
   </ul>
   <footer class="footer">スマカン Public-HR Ver.2.0.0 Copyright©スマカン株式会社</footer>

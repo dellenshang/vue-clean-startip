@@ -11,16 +11,16 @@
             <div class="tr">公的機関向け就業管理システム</div>
           </div>
           <div class="login-content">
-            <p class="login-label">アカウント</p>
             <div class="login-item">
+              <p class="login-label mb20">アカウント</p>
               <n-input :input-props="{ autocomplete: 'off', spellcheck: 'false' }" placeholder="アカウント">
                 <template #prefix>
                   <svg-icon name="ios-contact"></svg-icon>
                 </template>
               </n-input>
             </div>
-            <p class="login-label">パスワード</p>
             <div class="login-item">
+              <p class="login-label mb20">パスワード</p>
               <n-input
                 placeholder="パスワード"
                 type="password"
@@ -31,14 +31,14 @@
                 </template>
               </n-input>
             </div>
-            <n-grid x-gap="16" :cols="2" class="mt10 mb5">
+            <!-- <n-grid x-gap="16" :cols="2" class="mt10 mb5">
               <n-gi>
                 <n-button ghost type="primary" size="large" class="width100">xxxxx</n-button>
               </n-gi>
               <n-gi>
                 <n-button size="large" class="width100">xxxxx</n-button>
               </n-gi>
-            </n-grid>
+            </n-grid> -->
             <div class="login-btn">
               <n-button class="width100" type="primary" size="large" @click="login"> ログイン </n-button>
             </div>
@@ -52,7 +52,7 @@
 <script setup lang="ts">
 const router = useRouter()
 const login = () => {
-  router.push('/home')
+  router.push('/')
   // router.push('/createApplySheet')
 }
 </script>
@@ -117,8 +117,8 @@ body {
       flex-direction: column;
       justify-content: space-around;
       display: flex;
-      padding: 20px 26px;
-      height: 400px;
+      padding: 10px 26px 20px;
+      height: 364px;
       .login-label {
         display: inline-block;
         text-align: left;

@@ -23,7 +23,7 @@ module.exports = {
     'space-before-function-paren': 'off',
     'vue/no-multiple-template-root': 'off',
     'vue/multi-word-component-names': ['error', {
-      ignores: ['Login', 'Home', 'Header']
+      ignores: ['Login', 'Home', 'Header', '404', '403', '500']
     }],
     'symbol-description': 'off',
     'no-async-promise-executor': 'off',

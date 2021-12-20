@@ -56,7 +56,12 @@ onClickOutside(navbar, event => {
                 padding-bottom: 30px;
               "
             >
-              <li class="i-menu-item" v-for="t of e.secondMenuList" :key="t.pageId" :name="t.siteId + t.menuIndex">
+              <li
+                class="i-menu-item"
+                v-for="t of e.secondMenuList"
+                :key="t.pageId"
+                @click="$router.push(t.url), (showSider = false)"
+              >
                 <div>
                   <svg-icon
                     class="i-svg"
