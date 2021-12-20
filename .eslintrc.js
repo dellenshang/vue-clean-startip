@@ -23,7 +23,7 @@ module.exports = {
     'space-before-function-paren': 'off',
     'vue/no-multiple-template-root': 'off',
     'vue/multi-word-component-names': ['error', {
-      ignores: ['Login', 'Home']
+      ignores: ['Login', 'Home', 'Header']
     }],
     'symbol-description': 'off',
     'no-async-promise-executor': 'off',
@@ -34,6 +34,7 @@ module.exports = {
   globals: {
     useI18n: true,
     useRouter: true,
-    onClickOutside: true
+    onClickOutside: true,
+    useTimeoutFn: true
   }
 }
