@@ -2,6 +2,8 @@
   <ul class="i-menu i-menu-light i-menu-horizontal header-wrap-pc">
     <svg-icon class="head-logo cursor" name="logo-header" @click="$router.push('/')"></svg-icon>
     <div class="i-menu-time">{{ time }}</div>
+    <div style="flex: 1"></div>
+    <n-button style="margin: 7px 20px 0 0" type="primary" ghost @click="logout">logout</n-button>
   </ul>
   <footer class="footer">スマカン Public-HR Ver.2.0.0 Copyright©スマカン株式会社</footer>
 </template>
@@ -29,6 +31,12 @@ const getServerTime = () => {
 }
 
 getServerTime()
+const router = useRouter()
+const logout = () => {
+  router.push('/login')
+  localStorage.removeItem('Public_HR_Login')
+  // router.push('/createApplySheet')
+}
 </script>
 <style lang="scss" scoped>
 .header-wrap-pc,

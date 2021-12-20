@@ -53,6 +53,7 @@
 const router = useRouter()
 const login = () => {
   router.push('/')
+  localStorage.setItem('Public_HR_Login', '1')
   // router.push('/createApplySheet')
 }
 </script>

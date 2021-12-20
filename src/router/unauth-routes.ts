@@ -9,7 +9,7 @@ const error = (name: string) => () => import(`../views/Exception/${name}.vue`)
 export const defaultRoutes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home,
     children: [
       {
@@ -22,7 +22,7 @@ export const defaultRoutes: Array<RouteRecordRaw> = [
   },
   {
     path: '/login',
-    name: 'login',
+    name: 'Login',
     component: Login,
     meta: {
       title: '登录'
