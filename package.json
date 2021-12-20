@@ -1,6 +1,6 @@
 {
-  "name": "vue-clean-startip",
-  "version": "0.0.0",
+  "name": "public-hr",
+  "version": "0.0.2",
   "scripts": {
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build --mode production",
