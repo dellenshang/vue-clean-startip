@@ -32,6 +32,8 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off'
   },
   globals: {
-    useI18n: true
+    useI18n: true,
+    useRouter: true,
+    onClickOutside: true
   }
 }

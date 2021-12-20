@@ -1,20 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <n-grid x-gap="12" :cols="4">
-    <n-gi>
-      <div class="light-green">ffff</div>
-    </n-gi>
-    <n-gi>
-      <div class="green"></div>
-    </n-gi>
-    <n-gi>
-      <div class="light-green"></div>
-    </n-gi>
-    <n-gi>
-      <div class="green"></div>
-    </n-gi>
-  </n-grid>
+  <Sider></Sider>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+.n-layout-header,
+.n-layout-footer {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+.n-layout-sider {
+  background: rgba(128, 128, 128, 0.3);
+}
+
+.n-layout-content {
+  background: rgba(128, 128, 128, 0.4);
+}
+</style>

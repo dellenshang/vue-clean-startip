@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="login">
     <n-grid :cols="2">
@@ -35,14 +33,14 @@
             </div>
             <n-grid x-gap="16" :cols="2" class="mt10 mb5">
               <n-gi>
-                <n-button type="primary" size="large" class="width100">xxxxx</n-button>
+                <n-button ghost type="primary" size="large" class="width100">xxxxx</n-button>
               </n-gi>
               <n-gi>
-                <n-button type="primary" size="large" class="width100">xxxxx</n-button>
+                <n-button size="large" class="width100">xxxxx</n-button>
               </n-gi>
             </n-grid>
             <div class="login-btn">
-              <n-button class="width100" type="primary" size="large"> ログイン </n-button>
+              <n-button class="width100" type="primary" size="large" @click="login"> ログイン </n-button>
             </div>
           </div>
         </div>
@@ -50,6 +48,14 @@
     </n-grid>
   </div>
 </template>
+
+<script setup lang="ts">
+const router = useRouter()
+const login = () => {
+  router.push('/home')
+  // router.push('/createApplySheet')
+}
+</script>
 
 <style scope lang="scss">
 body {
@@ -137,6 +143,7 @@ body {
   .n-input,
   .n-input__input {
     height: 50px;
+    line-height: 50px;
     color: var(--grey);
     border-color: var(--input-border);
     background-color: var(--input-bg);

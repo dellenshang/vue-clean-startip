@@ -2,7 +2,7 @@
   "name": "vue-clean-startip",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vue-tsc --noEmit && vite build --mode production",
     "lint:code": "eslint --fix src/**/*.{js,ts,tsx,vue}",
     "preview": "vite preview",

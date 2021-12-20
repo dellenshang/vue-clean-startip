@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.79942 22.08605">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3076f2;
+      }
+
+      .cls-2 {
+        fill: #67d03b;
+      }
+    </style>
+  </defs>
+  <g id="CreateSchedule13_图层_2" data-name="图层 2">
+    <g id="CreateSchedule13">
+      <g>
+        <g>
+          <rect class="cls-1" x="6.8371" y="7.01596" width="1.06897" height="1"></rect>
+          <rect class="cls-1" x="6.83287" y="9.0188" width="1.06897" height="1"></rect>
+          <rect class="cls-1" x="8.84242" y="7.0266" width="5.99725" height="1"></rect>
+          <rect class="cls-1" x="8.84902" y="9.05053" width="5.99725" height="1"></rect>
+        </g>
+        <rect class="cls-2" x="6.96732" width="1.93617" height="5.02128"></rect>
+        <rect class="cls-2" x="12.88222" y="0.04255" width="1.93617" height="5.02128"></rect>
+        <g id="CreateSchedule13_pen">
+          <g id="CreateSchedule13__1" data-name="1">
+            <polygon class="cls-1" points="13.733 21.804 12.015 22.086 12.319 20.389 17.976 14.733 19.39 16.147 13.733 21.804"></polygon>
+          </g>
+          <g id="CreateSchedule13__2" data-name="2">
+            <rect class="cls-1" x="19.38521" y="12.87139" width="2" height="2" transform="translate(-3.83787 18.47735) rotate(-45)"></rect>
+          </g>
+        </g>
+        <path class="cls-2" d="M16.946,11.32332l1.867-1.867V3.03188a1,1,0,0,0-1-1H3.82367a1,1,0,0,0-1,1V14.05849H4.83435V3.70211H16.946Z"></path>
+        <path class="cls-2" d="M9.2583,19.10146l1.98-1.98H3.06a.07558.07558,0,0,0-.02552-.00165h-1.034v-.01837H2v-1.97H13.22827l2-2H0v2c.01.53,0,.7,0,1.08,0,1.75,1.17,2.82,3.06,2.88v.01Z"></path>
+      </g>
+    </g>
+  </g>
+</svg>
