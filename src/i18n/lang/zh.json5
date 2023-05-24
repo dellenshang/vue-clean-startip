@@ -1,0 +1,6 @@
+{
+  select: '嗯？',
+  fruits: {
+    banana: 'asdasd',
+  },
+}
